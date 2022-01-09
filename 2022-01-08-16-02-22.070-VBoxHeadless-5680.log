@@ -1,0 +1,12 @@
+Log created: 2022-01-08T16:02:22.703985000Z
+Process ID:  5680 (0x1630)
+Parent PID:  1 (0x1)
+Executable:  /usr/lib/virtualbox/VBoxHeadless
+Arg[0]: /usr/lib/virtualbox/VBoxHeadless
+Arg[1]: --comment
+Arg[2]: k8s_1_node01_1641568367084_57834
+Arg[3]: --startvm
+Arg[4]: 82d85b18-bb61-490f-ba6e-008f21f057cc
+Arg[5]: --vrde
+Arg[6]: config
+AddRef: illegal refcnt=3221225469 state=2

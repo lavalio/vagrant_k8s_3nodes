@@ -1,0 +1,12 @@
+Log created: 2022-01-09T00:26:17.758882000Z
+Process ID:  10392 (0x2898)
+Parent PID:  1 (0x1)
+Executable:  /usr/lib/virtualbox/VBoxHeadless
+Arg[0]: /usr/lib/virtualbox/VBoxHeadless
+Arg[1]: --comment
+Arg[2]: k8s_1_node01_1641686575490_13343
+Arg[3]: --startvm
+Arg[4]: ac0ba76a-ccc1-48a1-bec1-3d55de66780d
+Arg[5]: --vrde
+Arg[6]: config
+AddRef: illegal refcnt=3221225469 state=2
