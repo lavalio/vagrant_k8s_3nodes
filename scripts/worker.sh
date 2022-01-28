@@ -1,6 +1,6 @@
 #! /bin/bash
 
-# join a worker node
+# join a worker node into the cluster
 /bin/bash /vagrant/configs/join.sh -v
 
 sudo -i -u vagrant bash << EOF

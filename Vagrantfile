@@ -6,7 +6,7 @@ IMAGE = "ubuntu/impish64"
 Vagrant.configure(2) do |config|
 
   config.vm.provision "shell", inline: <<-SHELL
-    apt-get update -y
+    apt update -y
     echo "192.168.56.10  master-node" >> /etc/hosts
     echo "192.168.56.11  worker-node01" >> /etc/hosts
     echo "192.168.56.12  worker-node02" >> /etc/hosts
@@ -22,7 +22,7 @@ Vagrant.configure(2) do |config|
     node.vm.network "public_network", ip: "192.168.1.100", :bridge => "eno1"
 
     # Config namespace: config.ssh
-    # Make it as a regular ssh-login
+    # Let regular ssh-login
     node.ssh.insert_key = false
     node.ssh.private_key_path = ['~/.vagrant.d/insecure_private_key', '~/.ssh/id_rsa']
     node.vm.provision "file", source: "~/.ssh/id_rsa.pub", destination: "~/.ssh/authorized_keys"
@@ -61,6 +61,7 @@ Vagrant.configure(2) do |config|
       node.vm.network "public_network", ip: "192.168.1.10#{i}", :bridge => "eno1"
 
       # Config namespace: config.ssh
+      # Let regular ssh-login
       node.ssh.insert_key = false 
       node.ssh.private_key_path = ['~/.vagrant.d/insecure_private_key', '~/.ssh/id_rsa'] 
       node.vm.provision "file", source: "~/.ssh/id_rsa.pub", destination: "~/.ssh/authorized_keys" 
