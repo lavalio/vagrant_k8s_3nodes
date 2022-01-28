@@ -47,7 +47,7 @@ Vagrant.configure(2) do |config|
 
 
   # Kubernetes Worker Nodes
-  NodeCount = 2
+  NodeCount = 1
 
   (1..NodeCount).each do |i|
 
