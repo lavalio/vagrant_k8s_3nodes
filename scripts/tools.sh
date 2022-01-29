@@ -53,7 +53,3 @@ echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https:/
 sudo apt-get update
 sudo apt-get -y install curl kubelet kubeadm kubectl
 sudo apt-mark hold kubelet kubeadm kubectl
-
-
-
-
