@@ -6,7 +6,7 @@ IMAGE = "ubuntu/impish64"
 Vagrant.configure(2) do |config|
 
   config.vm.provision "shell", inline: <<-SHELL
-    apt update -y
+    apt-get update -y
     echo "192.168.56.10  master-node" >> /etc/hosts
     echo "192.168.56.11  worker-node01" >> /etc/hosts
     echo "192.168.56.12  worker-node02" >> /etc/hosts
